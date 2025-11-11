@@ -1,4 +1,4 @@
-# Curso Práctico: Emprende con IA - Material del Curso
+# WORKSHOP: Emprende con IA - Material del Curso
 
 ¡Bienvenidos al material complementario de nuestro curso "Emprende con IA: Del Caos de Ideas al Negocio Rentable"!
 
