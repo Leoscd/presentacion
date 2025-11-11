@@ -1,246 +1,358 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso: Emprende con IA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="hero-section">
-        <img src="https://raw.githubusercontent.com/Leoscd/presentacion/main/SOY%20LEO%20-%20logo_SIN%20FONDO%20(2).png" alt="Leo IML Logo" class="hero-logo">
-        <div class="hero-content">
-            <h1>Curso Práctico: Emprende con IA</h1>
-            <p>Una guía educativa para construir negocios inteligentes.</p>
-        </div>
-    </header>
-
-    <main class="modules-container">
-        <!-- Nuevo Módulo: Herramientas de IA -->
-        <div class="module">
-            <div class="module-header">
-                <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Herramientas de IA">
-                <h2>Herramientas de IA para el Curso</h2>
-                <span class="icon">+</span>
-            </div>
-            <div class="module-content">
-                <h4>Acceso Rápido a Plataformas de IA</h4>
-                <p>Para que puedas probar los prompts y ejemplos de forma interactiva durante el curso, aquí tienes enlaces directos a algunas de las plataformas de IA más relevantes. Te recomendamos tener al menos una de ellas abierta para experimentar.</p>
-                <ul>
-                    <li><strong>Google AI Studio / Gemini:</strong> <a href="https://aistudio.google.com/" target="_blank">aistudio.google.com</a> (Acceso a modelos Gemini, ideal para experimentación y desarrollo).</li>
-                    <li><strong>Claude (Anthropic):</strong> <a href="https://claude.ai/" target="_blank">claude.ai</a> (Conocido por su capacidad de manejar contextos largos y razonamiento).</li>
-                    <li><strong>NotebookLM (Google):</strong> <a href="https://notebooklm.google.com/" target="_blank">notebooklm.google.com</a> (Una herramienta de Google para crear una base de conocimiento personal a partir de tus propios documentos. Ideal para 'alimentar' a la IA con tu propio contexto).</li>
-                    <li><strong>ChatGPT (OpenAI):</strong> <a href="https://chat.openai.com/" target="_blank">chat.openai.com</a> (El modelo más conocido, útil para una amplia gama de tareas).</li>
-                </ul>
-                <p>¡Abre tu favorita y prepárate para experimentar!</p>
-            </div>
-        </div>
-
-        <!-- Módulo 1 -->
-        <div class="module">
-            <div class="module-header">
-                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Estrategia y Orden">
-                <h2>Módulo I: Orden - De la Idea al Concepto</h2>
-                <span class="icon">+</span>
-            </div>
-            <div class="module-content">
-                <h4>¿Qué son la IA y el Machine Learning (ML)?</h4>
-                <p>Imagina que la <strong>Inteligencia Artificial (IA)</strong> es el título universitario (por ejemplo, "Medicina"), mientras que el <strong>Machine Learning (ML)</strong> es la especialización (por ejemplo, "Cardiología"). La IA es el campo amplio de crear máquinas que simulan la inteligencia humana. El ML es una técnica específica dentro de la IA que consiste en enseñar a las máquinas a aprender de los datos por sí mismas, sin ser programadas explícitamente para cada tarea.</p>
-                
-                <h4>Ejemplo: Estructurar una Idea de Negocio</h4>
-                <p>Supongamos que tienes una idea: "un servicio de planificación de comidas". Es una idea vaga. Usemos la IA como un socio para estructurarla:</p>
-                <ol>
-                    <li><strong>Definir el Nicho:</strong> Le pedimos a la IA que identifique sub-nichos rentables. Podría sugerir "planes de comida para atletas de alto rendimiento", "para diabéticos tipo 2" o "para familias ocupadas con presupuesto limitado".</li>
-                    <li><strong>Identificar el Dolor:</strong> Elegimos "diabéticos tipo 2". Ahora le pedimos a la IA que liste los principales problemas que enfrentan: "dificultad para contar carbohidratos", "falta de variedad en las recetas", "miedo a comer fuera".</li>
-                    <li><strong>Crear la Solución (MVP):</strong> Basado en ese dolor, le pedimos a la IA que diseñe un "Producto Mínimo Viable". Podría proponer: "Una app que genera un plan de comidas semanal con recetas bajas en índice glucémico, lista de compras automática y un chatbot que responde dudas sobre sustitución de ingredientes".</li>
-                </ol>
-
-                <h4>El Arte del Prompt: Ingeniería de Contexto</h4>
-                <p>Un buen prompt no es solo una pregunta, es una instrucción detallada que guía a la IA. La <strong>Ingeniería de Contexto</strong> es el proceso de darle a la IA toda la información, contexto, y el rol que necesita para darte una respuesta de alta calidad.</p>
-                
-                <h4>Tipos de Prompts (Ejemplos):</h4>
-                <ul>
-                    <li><strong>Zero-Shot:</strong> Una orden directa sin ejemplos.
-                        <pre><code>Genera un nombre para una startup de planificación de comidas para diabéticos.</code></pre>
-                    </li>
-                    <li><strong>Few-Shot:</strong> Le das 1 o 2 ejemplos para que entienda el patrón.
-                        <pre><code>Ejemplo 1: "FitFuel" para atletas.
-Ejemplo 2: "BudgetBites" para familias.
-Ahora, genera un nombre para una startup de comidas para diabéticos.</code></pre>
-                    </li>
-                    <li><strong>Meta-Prompting (Rol, Tarea y Checkpoints):</strong> Se asigna un rol específico a la IA, se le define una tarea clara y se le proporcionan puntos de chequeo o un paso a paso para asegurar la calidad y el formato de la respuesta. Esto desbloquea la capacidad de la IA para seguir instrucciones complejas y producir resultados estructurados.
-                        <pre><code>Actúa como un experto en branding con 20 años de experiencia. Tu misión es crear un nombre memorable, inspirador y que transmita seguridad para una nueva app de nutrición para diabéticos.
-Puntos de Chequeo:
-1. El nombre debe ser de 1 a 3 palabras.
-2. Debe evocar salud, control y facilidad.
-3. Genera 5 opciones y explica brevemente por qué cada una cumple los criterios.</code></pre>
-                    </li>
-                    <li><strong>JSON Prompt (Clave/Valor):</strong> Le pides a la IA que la salida sea en formato JSON (JavaScript Object Notation), estructurando la información en pares "clave/valor". Esto es crucial para integrar las respuestas de la IA directamente en aplicaciones, bases de datos o flujos de trabajo automatizados, desbloqueando la capacidad de la IA para ser un procesador de datos estructurados.
-                        <pre><code>Analiza el siguiente texto y extrae el nombre del producto, el público objetivo y las características principales. Presenta la información en formato JSON con las claves "nombre_producto", "publico_objetivo" y "caracteristicas_clave".
-Texto: "Nuestra nueva app, Glucosafe, ayuda a los diabéticos tipo 2 a controlar su dieta con planes de comida personalizados y seguimiento de glucosa."</code></pre>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Módulo 2 -->
-        <div class="module">
-            <div class="module-header">
-                <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ejecución y Construcción">
-                <h2>Módulo II: Ejecución - Construcción de Sistemas Inteligentes</h2>
-                <span class="icon">+</span>
-            </div>
-            <div class="module-content">
-                <h4>El Método I.D.E.A. para crear Sistemas Apalancados en IA</h4>
-                <p>Un sistema inteligente no es una sola herramienta, es un flujo de trabajo. Proponemos el método I.D.E.A. para construirlo:</p>
-                <ul>
-                    <li><strong>I - Input (Entrada):</strong> Recopilar y estructurar la información que alimentará a tu sistema. La calidad de tu sistema depende de la calidad de tus datos.</li>
-                    <li><strong>D - Development (Desarrollo):</strong> Usar la IA para generar los componentes centrales de tu producto o servicio.</li>
-                    <li><strong>E - Enhancement (Mejora):</strong> Iterar sobre lo generado, usando la IA para refinar, corregir y optimizar.</li>
-                    <li><strong>A - Automation (Automatización):</strong> Conectar los procesos para que el sistema funcione con la mínima intervención manual.</li>
-                </ul>
-
-                <h4>Ejemplo Práctico: Crear un E-book con el Método I.D.E.A.</h4>
-                <p><strong>Paso 1: Input</strong><br>Creamos una base de conocimiento. Podríamos usar una herramienta como NotebookLM y subirle 10 artículos de confianza sobre nutrición para diabéticos.</p>
-                <pre><code>// No se necesita un prompt aquí, es la acción de subir los archivos fuente.</code></pre>
-
-                <p><strong>Paso 2: Development</strong><br>Le pedimos a la IA que actúe como un experto y genere el esqueleto del e-book, basándose en el conocimiento que le dimos.</p>
-                <pre><code>Actúa como un nutricionista y autor experto. Basándote EXCLUSIVAMENTE en los documentos fuente proporcionados, genera el índice detallado para un e-book de 5 capítulos titulado "Comer Bien con Diabetes: Una Guía Práctica".</code></pre>
-
-                <p><strong>Paso 3: Enhancement</strong><br>Tomamos uno de los capítulos y le pedimos a la IA que lo mejore, añadiendo un tono específico.</p>
-                <pre><code>Toma el Capítulo 3 del índice que creaste ("Planificando tus Comidas Semanales") y desarróllalo en 500 palabras. Usa un tono cercano, motivador y fácil de entender para alguien recién diagnosticado. Incluye una tabla simple en formato markdown.</code></pre>
-
-                <p><strong>Paso 4: Automation</strong><br>Aunque la automatización completa requiere herramientas más avanzadas (APIs, Zapier), podemos simularla pidiéndole a la IA que genere los siguientes pasos.</p>
-                <pre><code>Basado en el capítulo desarrollado, genera 3 publicaciones para redes sociales (un tweet, un post de Instagram y un post de LinkedIn) para promocionar el e-book. Incluye hashtags relevantes.</code></pre>
-            </div>
-        </div>
-        
-        <!-- Módulo 3 -->
-        <div class="module">
-            <div class="module-header">
-                <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Control y Optimización">
-                <h2>Módulo III: Control - Optimización Basada en Datos</h2>
-                <span class="icon">+</span>
-            </div>
-            <div class="module-content">
-                <h4>El "Control" como un Ciclo de Retroalimentación</h4>
-                <p>En nuestra metodología, "Control" no significa "comando", sino "calibración". Es el proceso de usar datos para entender qué funciona y qué no, y luego usar esa información para mejorar tu sistema. La IA es una herramienta increíblemente poderosa para este ciclo de retroalimentación.</p>
-
-                <h4>Análisis de Sentimiento del Feedback de Clientes</h4>
-                <p>Puedes recolectar comentarios de clientes (de encuestas, emails, redes sociales) y usar la IA para analizarlos a escala.</p>
-                <pre><code>Actúa como un analista de datos. Te proporcionaré una lista de 50 comentarios de clientes sobre nuestra app de nutrición. Tu tarea es:
-1. Clasificar cada comentario como "Positivo", "Negativo" o "Neutral".
-2. Identificar los 3 temas o quejas más recurrentes en los comentarios negativos.
-3. Extraer 2 sugerencias de mejora mencionadas por los usuarios.
-Aquí están los comentarios: [Pegar aquí la lista de comentarios]</code></pre>
-
-                <h4>A/B Testing de Contenido de Marketing</h4>
-                <p>¿No estás seguro de qué titular funcionará mejor para tu landing page? Pídele a la IA que genere variantes y te ayude a estructurar una prueba.</p>
-                <pre><code>Actúa como un experto en marketing de conversión. El titular actual de mi página es: "La mejor app para controlar tu diabetes".
-1. Genera 5 variantes de este titular. Una debe ser más directa, una más emocional, una enfocada en el beneficio, una que haga una pregunta y una más controversial.
-2. Estructura una tabla simple en markdown para planificar un A/B test con estas variantes, incluyendo columnas para "Variante", "Hipótesis" y "Métrica a Medir (KPI)".</code></pre>
-
-                <h4>Visualización de Datos con IA</h4>
-                <p>Incluso si no sabes programar, puedes pedirle a la IA que genere el código por ti para crear visualizaciones de tus datos.</p>
-                <pre><code>Tengo un archivo CSV llamado 'usuarios.csv' con las columnas 'fecha_registro', 'pais' y 'plan_suscripcion'. Escribe un script de Python usando las librerías pandas y matplotlib para generar un gráfico de barras que muestre el número de usuarios registrados por país.</code></pre>
-            </div>
-        </div>
-
-        <!-- Módulo 4 -->
-        <div class="module">
-            <div class="module-header">
-                <img src="https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Estrategia Comercial">
-                <h2>Módulo IV: Entregable - Estrategia Comercial Inteligente</h2>
-                <span class="icon">+</span>
-            </div>
-            <div class="module-content">
-                <h4>El "Entregable" es la Venta del Sistema</h4>
-                <p>En este módulo, nos enfocamos en cómo "empaquetar" y "vender" el valor que tu sistema inteligente crea. La IA puede ayudarte a definir a tu cliente y a comunicarte con él de manera mucho más efectiva.</p>
-
-                <h4>Creación de "Customer Personas" con IA</h4>
-                <p>Un "Customer Persona" es un arquetipo de tu cliente ideal. Ayuda a todo tu equipo a entender para quién están trabajando.</p>
-                <pre><code>Basado en la información de nuestra app "Glucosafe" para diabéticos tipo 2, crea un perfil de "Customer Persona" detallado.
-El resultado debe ser una tabla en markdown con las siguientes filas:
-- Nombre Ficticio
-- Edad
-- Profesión
-- Nivel de conocimiento tecnológico (Bajo, Medio, Alto)
-- Metas principales (relacionadas con su salud)
-- Frustraciones principales (relacionadas con su condición)
-- Una cita que lo represente (ej: "Solo quiero comer sin miedo")</code></pre>
-
-                <h4>Diseño de Campañas de Email Automatizadas</h4>
-                <p>Pídele a la IA que diseñe una secuencia de correos para nutrir a un nuevo suscriptor y llevarlo hacia la compra.</p>
-                <pre><code>Actúa como un email marketer experto. Diseña una secuencia de bienvenida de 3 correos para un usuario que se registró para descargar un "recetario gratis" de nuestra app Glucosafe.
-- Email 1 (Inmediato): Entrega del recetario y bienvenida.
-- Email 2 (Día 3): Aportar más valor, un tip sobre cómo planificar la compra de ingredientes.
-- Email 3 (Día 5): Introducir suavemente los beneficios de la versión premium de la app, enfocándose en cómo soluciona los problemas del día a día.
-Escribe el asunto y el cuerpo para cada correo.</code></pre>
-
-                <h4>Simulación y Entrenamiento de Ventas</h4>
-                <p>Puedes usar la IA como un sparring para practicar cómo manejar objeciones de venta.</p>
-                <pre><code>Iniciemos un role-playing. Yo soy un vendedor de la app Glucosafe Premium. Tú eres un cliente potencial que dice: "Me parece interesante, pero es muy caro. Hay otras apps gratis".
-Tu objetivo es presentar objeciones realistas. Mi objetivo es convencerte del valor. Comienza tú.</code></pre>
-            </div>
-        </div>
-
-        <!-- Módulo 5 -->
-        <div class="module">
-            <div class="module-header">
-                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cierre y Próximos Pasos">
-                <h2>Módulo V: Cierre - Tu Viaje como Emprendedor IA</h2>
-                <span class="icon">+</span>
-            </div>
-            <div class="module-content">
-                <h4>Resumen del Framework I.D.E.A.</h4>
-                <p>Hemos completado un viaje a través de un método estructurado para construir negocios en la era de la IA. Recordemos:</p>
-                <ul>
-                    <li><strong>Input:</strong> La calidad de lo que entra determina la calidad de lo que sale. La curación de datos es fundamental.</li>
-                    <li><strong>Development:</strong> Usamos la IA como un socio de creación, no como un simple ejecutor de tareas.</li>
-                    <li><strong>Enhancement:</strong> La iteración es la clave. Usamos la IA para refinar y mejorar constantemente.</li>
-                    <li><strong>Automation:</strong> El objetivo es crear sistemas que trabajen para nosotros, liberando nuestro tiempo para la estrategia.</li>
-                </ul>
-
-                <h4>Tu Proyecto Final: Aplica lo Aprendido</h4>
-                <p>El conocimiento se consolida con la práctica. Te proponemos un desafío:</p>
-                <ol>
-                    <li>Elige una idea de negocio propia (o una que te apasione).</li>
-                    <li>Pasa esa idea por los 4 pasos del método I.D.E.A., generando los prompts correspondientes en cada fase.</li>
-                    <li>Documenta el proceso: ¿Qué funcionó? ¿Qué fue difícil? ¿Cómo mejoró la IA tu idea inicial?</li>
-                </ol>
-                <p>Este ejercicio es la mejor manera de internalizar el framework y empezar a pensar como un verdadero Emprendedor IA.</p>
-
-                <h4>Áreas para Seguir Aprendiendo</h4>
-                <p>Este curso es solo el comienzo. Te recomendamos explorar estas áreas para llevar tus habilidades al siguiente nivel:</p>
-                <ul>
-                    <li><strong>Integración con APIs:</strong> Aprender a conectar modelos de IA con otras aplicaciones a través de sus APIs (como la API de OpenAI o Gemini) para una automatización real.</li>
-                    - <strong>Fine-Tuning (Ajuste Fino):</strong> Investigar cómo re-entrenar modelos de IA con tus propios datos para crear un asistente ultra-especializado en tu nicho.</li>
-                    - <strong>Ética en la IA:</strong> Profundizar en los dilemas éticos relacionados con el uso de la IA, los sesgos en los datos y la privacidad.</li>
-                    - <strong>Herramientas No-Code:</strong> Explorar plataformas como Zapier, Make o Voiceflow que te permiten crear automatizaciones complejas sin necesidad de escribir código.</li>
-                </ul>
-                <p>¡El futuro lo construyen los que aprenden más rápido. ¡Mucha suerte!</p>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class="site-footer">
-        <img src="https://raw.githubusercontent.com/Leoscd/presentacion/main/SOY%20LEO%20-%20logo_SIN%20FONDO%20(2).png" alt="Logo de Leo" class="footer-logo">
-        <p>Creado por Leo IML</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/soy.leo_ai/" target="_blank" title="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2A5.6 5.6 0 0 0 4 7.6v8.8A5.6 5.6 0 0 0 7.6 20h8.8a5.6 5.6 0 0 0 3.6-3.6V7.6A5.6 5.6 0 0 0 16.4 4H7.6zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm6.5-3a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/leo-iml" target="_blank" title="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a>
-            <a href="mailto:leodiazdt@gmail.com" title="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-            </a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+ <!DOCTYPE html>
+     2 <html lang="es">
+     3 <head>
+     4     <meta charset="UTF-8">
+     5     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6     <title>Workshop: Emprende con IA</title>
+     7     <link rel="stylesheet" href="style.css">
+     8 </head>
+     9 <body>
+    10
+    11     <header class="hero-section">
+    12         <img src=
+       "https://raw.githubusercontent.com/Leoscd/presentacion/main/SOY%20LEO%20-%20logo_SIN%20FONDO%20(2).png"
+       alt="Leo IML Logo" class="hero-logo">
+    13         <div class="hero-content">
+    14             <h1>Workshop: Emprende con IA</h1>
+    15             <p>Una guía educativa para construir negocios inteligentes.</p>
+    16         </div>
+    17     </header>
+    18
+    19     <main class="modules-container">
+    20         <!-- Nuevo Módulo: Herramientas de IA -->
+    21         <div class="module">
+    22             <div class="module-header">
+    23                 <img src=
+       "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&
+       dpr=1" alt="Herramientas de IA">
+    24                 <h2>Herramientas de IA para el Curso</h2>
+    25                 <span class="icon">+</span>
+    26             </div>
+    27             <div class="module-content">
+    28                 <h4>Acceso Rápido a Plataformas de IA</h4>
+    29                 <p>Para que puedas probar los prompts y ejemplos de forma interactiva durante el curso,
+       aquí tienes enlaces directos a algunas de las plataformas de IA más relevantes. Te recomendamos tener al
+       menos una de ellas abierta para experimentar.</p>
+    30                 <ul>
+    31                     <li><strong>Google AI Studio / Gemini:</strong> <a href=
+       "https://aistudio.google.com/" target="_blank">aistudio.google.com</a> (Acceso a modelos Gemini, ideal
+       para experimentación y desarrollo).</li>
+    32                     <li><strong>Claude (Anthropic):</strong> <a href="https://claude.ai/" target="_blank"
+       >claude.ai</a> (Conocido por su capacidad de manejar contextos largos y razonamiento).</li>
+    33                     <li><strong>NotebookLM (Google):</strong> <a href="https://notebooklm.google.com/"
+       target="_blank">notebooklm.google.com</a> (Una herramienta de Google para crear una base de conocimiento
+       personal a partir de tus propios documentos. Ideal para 'alimentar' a la IA con tu propio contexto).</li>
+    34                     <li><strong>ChatGPT (OpenAI):</strong> <a href="https://chat.openai.com/" target=
+       "_blank">chat.openai.com</a> (El modelo más conocido, útil para una amplia gama de tareas).</li>
+    35                 </ul>
+    36                 <p>¡Abre tu favorita y prepárate para experimentar!</p>
+    37             </div>
+    38         </div>
+    39
+    40         <!-- Módulo 1 -->
+    41         <div class="module">
+    42             <div class="module-header">
+    43                 <img src=
+       "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=75
+       0&dpr=1" alt="Estrategia y Orden">
+    44                 <h2>Módulo I: Orden - De la Idea al Concepto</h2>
+    45                 <span class="icon">+</span>
+    46             </div>
+    47             <div class="module-content">
+    48                 <h4>¿Qué son la IA y el Machine Learning (ML)?</h4>
+    49                 <p>Imagina que la <strong>Inteligencia Artificial (IA)</strong> es el título
+       universitario (por ejemplo, "Medicina"), mientras que el <strong>Machine Learning (ML)</strong> es la
+       especialización (por ejemplo, "Cardiología"). La IA es el campo amplio de crear máquinas que simulan la
+       inteligencia humana. El ML es una técnica específica dentro de la IA que consiste en enseñar a las
+       máquinas a aprender de los datos por sí mismas, sin ser programadas explícitamente para cada tarea.</p>
+    50
+    51                 <h4>Ejemplo: Estructurar una Idea de Negocio</h4>
+    52                 <p>Supongamos que tienes una idea: "un servicio de planificación de comidas". Es una idea
+       vaga. Usemos la IA como un socio para estructurarla:</p>
+    53                 <ol>
+    54                     <li><strong>Definir el Nicho:</strong> Le pedimos a la IA que identifique sub-nichos
+       rentables. Podría sugerir "planes de comida para atletas de alto rendimiento", "para diabéticos tipo 2" o
+       "para familias ocupadas con presupuesto limitado".</li>
+    55                     <li><strong>Identificar el Dolor:</strong> Elegimos "diabéticos tipo 2". Ahora le
+       pedimos a la IA que liste los principales problemas que enfrentan: "dificultad para contar
+       carbohidratos", "falta de variedad en las recetas", "miedo a comer fuera".</li>
+    56                     <li><strong>Crear la Solución (MVP):</strong> Basado en ese dolor, le pedimos a la IA
+       que diseñe un "Producto Mínimo Viable". Podría proponer: "Una app que genera un plan de comidas semanal
+       con recetas bajas en índice glucémico, lista de compras automática y un chatbot que responde dudas sobre
+       sustitución de ingredientes".</li>
+    57                 </ol>
+    58
+    59                 <h4>El Arte del Prompt: Ingeniería de Contexto</h4>
+    60                 <p>Un buen prompt no es solo una pregunta, es una instrucción detallada que guía a la IA.
+       La <strong>Ingeniería de Contexto</strong> es el proceso de darle a la IA toda la información, contexto,
+       y el rol que necesita para darte una respuesta de alta calidad.</p>
+    61
+    62                 <h4>Tipos de Prompts (Ejemplos):</h4>
+    63                 <ul>
+    64                     <li><strong>Zero-Shot:</strong> Una orden directa sin ejemplos.
+    65                         <pre><code>Genera un nombre para una startup de planificación de comidas para
+       diabéticos.</code></pre>
+    66                     </li>
+    67                     <li><strong>Few-Shot:</strong> Le das 1 o 2 ejemplos para que entienda el patrón.
+    68                         <pre><code>Ejemplo 1: "FitFuel" para atletas.
+    69 Ejemplo 2: "BudgetBites" para familias.
+    70 Ahora, genera un nombre para una startup de comidas para diabéticos.</code></pre>
+    71                     </li>
+    72                     <li><strong>Meta-Prompting (Rol, Tarea y Checkpoints):</strong> Se asigna un rol
+       específico a la IA, se le define una tarea clara y se le proporcionan puntos de chequeo o un paso a paso
+       para asegurar la calidad y el formato de la respuesta. Esto desbloquea la capacidad de la IA para seguir
+       instrucciones complejas y producir resultados estructurados.
+    73                         <pre><code>Actúa como un experto en branding con 20 años de experiencia. Tu
+       misión es crear un nombre memorable, inspirador y que transmita seguridad para una nueva app de nutrición
+       para diabéticos.
+    74 Puntos de Chequeo:
+    75 1. El nombre debe ser de 1 a 3 palabras.
+    76 2. Debe evocar salud, control y facilidad.
+    77 3. Genera 5 opciones y explica brevemente por qué cada una cumple los criterios.</code></pre>
+    78                     </li>
+    79                     <li><strong>JSON Prompt (Clave/Valor):</strong> Le pides a la IA que la salida sea en
+       formato JSON (JavaScript Object Notation), estructurando la información en pares "clave/valor". Esto es
+       crucial para integrar las respuestas de la IA directamente en aplicaciones, bases de datos o flujos de
+       trabajo automatizados, desbloqueando la capacidad de la IA para ser un procesador de datos estructurados.
+    80                         <pre><code>Analiza el siguiente texto y extrae el nombre del producto, el público
+       objetivo y las características principales. Presenta la información en formato JSON con las claves
+       "nombre_producto", "publico_objetivo" y "caracteristicas_clave".
+    81 Texto: "Nuestra nueva app, Glucosafe, ayuda a los diabéticos tipo 2 a controlar su dieta con planes de
+       comida personalizados y seguimiento de glucosa."</code></pre>
+    82                     </li>
+    83                 </ul>
+    84             </div>
+    85         </div>
+    86
+    87         <!-- Módulo 2 -->
+    88         <div class="module">
+    89             <div class="module-header">
+    90                 <img src=
+       "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=75
+       0&dpr=1" alt="Ejecución y Construcción">
+    91                 <h2>Módulo II: Ejecución - Construcción de Sistemas Inteligentes</h2>
+    92                 <span class="icon">+</span>
+    93             </div>
+    94             <div class="module-content">
+    95                 <h4>El Método I.D.E.A. para crear Sistemas Apalancados en IA</h4>
+    96                 <p>Un sistema inteligente no es una sola herramienta, es un flujo de trabajo. Proponemos
+       el método I.D.E.A. para construirlo:</p>
+    97                 <ul>
+    98                     <li><strong>I - Input (Entrada):</strong> Recopilar y estructurar la información que
+       alimentará a tu sistema. La calidad de tu sistema depende de la calidad de tus datos.</li>
+    99                     <li><strong>D - Development (Desarrollo):</strong> Usar la IA para generar los
+       componentes centrales de tu producto o servicio.</li>
+   100                     <li><strong>E - Enhancement (Mejora):</strong> Iterar sobre lo generado, usando la IA
+       para refinar, corregir y optimizar.</li>
+   101                     <li><strong>A - Automation (Automatización):</strong> Conectar los procesos para que
+       el sistema funcione con la mínima intervención manual.</li>
+   102                 </ul>
+   103
+   104                 <h4>Ejemplo Práctico: Crear un E-book con el Método I.D.E.A.</h4>
+   105                 <p><strong>Paso 1: Input</strong><br>Creamos una base de conocimiento. Podríamos usar una
+       herramienta como NotebookLM y subirle 10 artículos de confianza sobre nutrición para diabéticos.</p>
+   106                 <pre><code>// No se necesita un prompt aquí, es la acción de subir los archivos fuente.</
+       code></pre>
+   107
+   108                 <p><strong>Paso 2: Development</strong><br>Le pedimos a la IA que actúe como un experto y
+       genere el esqueleto del e-book, basándose en el conocimiento que le dimos.</p>
+   109                 <pre><code>Actúa como un nutricionista y autor experto. Basándote EXCLUSIVAMENTE en los
+       documentos fuente proporcionados, genera el índice detallado para un e-book de 5 capítulos titulado
+       "Comer Bien con Diabetes: Una Guía Práctica".</code></pre>
+   110
+   111                 <p><strong>Paso 3: Enhancement</strong><br>Tomamos uno de los capítulos y le pedimos a la
+       IA que lo mejore, añadiendo un tono específico.</p>
+   112                 <pre><code>Toma el Capítulo 3 del índice que creaste ("Planificando tus Comidas
+       Semanales") y desarróllalo en 500 palabras. Usa un tono cercano, motivador y fácil de entender para
+       alguien recién diagnosticado. Incluye una tabla simple en formato markdown.</code></pre>
+   113
+   114                 <p><strong>Paso 4: Automation</strong><br>Aunque la automatización completa requiere
+       herramientas más avanzadas (APIs, Zapier), podemos simularla pidiéndole a la IA que genere los siguientes
+       pasos.</p>
+   115                 <pre><code>Basado en el capítulo desarrollado, genera 3 publicaciones para redes sociales
+       (un tweet, un post de Instagram y un post de LinkedIn) para promocionar el e-book. Incluye hashtags
+       relevantes.</code></pre>
+   116             </div>
+   117         </div>
+   118
+   119         <!-- Módulo 3 -->
+   120         <div class="module">
+   121             <div class="module-header">
+   122                 <img src=
+       "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&
+       dpr=1" alt="Control y Optimización">
+   123                 <h2>Módulo III: Control - Optimización Basada en Datos</h2>
+   124                 <span class="icon">+</span>
+   125             </div>
+   126             <div class="module-content">
+   127                 <h4>El "Control" como un Ciclo de Retroalimentación</h4>
+   128                 <p>En nuestra metodología, "Control" no significa "comando", sino "calibración". Es el
+       proceso de usar datos para entender qué funciona y qué no, y luego usar esa información para mejorar tu
+       sistema. La IA es una herramienta increíblemente poderosa para este ciclo de retroalimentación.</p>
+   129
+   130                 <h4>Análisis de Sentimiento del Feedback de Clientes</h4>
+   131                 <p>Puedes recolectar comentarios de clientes (de encuestas, emails, redes sociales) y
+       usar la IA para analizarlos a escala.</p>
+   132                 <pre><code>Actúa como un analista de datos. Te proporcionaré una lista de 50 comentarios
+       de clientes sobre nuestra app de nutrición. Tu tarea es:
+   133 1. Clasificar cada comentario como "Positivo", "Negativo" o "Neutral".
+   134 2. Identificar los 3 temas o quejas más recurrentes en los comentarios negativos.
+   135 3. Extraer 2 sugerencias de mejora mencionadas por los usuarios.
+   136 Aquí están los comentarios: [Pegar aquí la lista de comentarios]</code></pre>
+   137
+   138                 <h4>A/B Testing de Contenido de Marketing</h4>
+   139                 <p>¿No estás seguro de qué titular funcionará mejor para tu landing page? Pídele a la IA
+       que genere variantes y te ayude a estructurar una prueba.</p>
+   140                 <pre><code>Actúa como un experto en marketing de conversión. El titular actual de mi
+       página es: "La mejor app para controlar tu diabetes".
+   141 1. Genera 5 variantes de este titular. Una debe ser más directa, una más emocional, una enfocada en el
+       beneficio, una que haga una pregunta y una más controversial.
+   142 2. Estructura una tabla simple en markdown para planificar un A/B test con estas variantes, incluyendo
+       columnas para "Variante", "Hipótesis" y "Métrica a Medir (KPI)".</code></pre>
+   143
+   144                 <h4>Visualización de Datos con IA</h4>
+   145                 <p>Incluso si no sabes programar, puedes pedirle a la IA que genere el código por ti para
+       crear visualizaciones de tus datos.</p>
+   146                 <pre><code>Tengo un archivo CSV llamado 'usuarios.csv' con las columnas 'fecha_registro',
+       'pais' y 'plan_suscripcion'. Escribe un script de Python usando las librerías pandas y matplotlib para
+       generar un gráfico de barras que muestre el número de usuarios registrados por país.</code></pre>
+   147             </div>
+   148         </div>
+   149
+   150         <!-- Módulo 4 -->
+   151         <div class="module">
+   152             <div class="module-header">
+   153                 <img src=
+       "https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=75
+       0&dpr=1" alt="Estrategia Comercial">
+   154                 <h2>Módulo IV: Entregable - Estrategia Comercial Inteligente</h2>
+   155                 <span class="icon">+</span>
+   156             </div>
+   157             <div class="module-content">
+   158                 <h4>El "Entregable" es la Venta del Sistema</h4>
+   159                 <p>En este módulo, nos enfocamos en cómo "empaquetar" y "vender" el valor que tu sistema
+       inteligente crea. La IA puede ayudarte a definir a tu cliente y a comunicarte con él de manera mucho más
+       efectiva.</p>
+   160
+   161                 <h4>Creación de "Customer Personas" con IA</h4>
+   162                 <p>Un "Customer Persona" es un arquetipo de tu cliente ideal. Ayuda a todo tu equipo a
+       entender para quién están trabajando.</p>
+   163                 <pre><code>Basado en la información de nuestra app "Glucosafe" para diabéticos tipo 2,
+       crea un perfil de "Customer Persona" detallado.
+   164 El resultado debe ser una tabla en markdown con las siguientes filas:
+   165 - Nombre Ficticio
+   166 - Edad
+   167 - Profesión
+   168 - Nivel de conocimiento tecnológico (Bajo, Medio, Alto)
+   169 - Metas principales (relacionadas con su salud)
+   170 - Frustraciones principales (relacionadas con su condición)
+   171 - Una cita que lo represente (ej: "Solo quiero comer sin miedo")</code></pre>
+   172
+   173                 <h4>Diseño de Campañas de Email Automatizadas</h4>
+   174                 <p>Pídele a la IA que diseñe una secuencia de correos para nutrir a un nuevo suscriptor y
+       llevarlo hacia la compra.</p>
+   175                 <pre><code>Actúa como un email marketer experto. Diseña una secuencia de bienvenida de 3
+       correos para un usuario que se registró para descargar un "recetario gratis" de nuestra app Glucosafe.
+   176 - Email 1 (Inmediato): Entrega del recetario y bienvenida.
+   177 - Email 2 (Día 3): Aportar más valor, un tip sobre cómo planificar la compra de ingredientes.
+   178 - Email 3 (Día 5): Introducir suavemente los beneficios de la versión premium de la app, enfocándose en
+       cómo soluciona los problemas del día a día.
+   179 Escribe el asunto y el cuerpo para cada correo.</code></pre>
+   180
+   181                 <h4>Simulación y Entrenamiento de Ventas</h4>
+   182                 <p>Puedes usar la IA como un sparring para practicar cómo manejar objeciones de venta.</p
+       >
+   183                 <pre><code>Iniciemos un role-playing. Yo soy un vendedor de la app Glucosafe Premium. Tú
+       eres un cliente potencial que dice: "Me parece interesante, pero es muy caro. Hay otras apps gratis".
+   184 Tu objetivo es presentar objeciones realistas. Mi objetivo es convencerte del valor. Comienza tú.</code>
+       </pre>
+   185             </div>
+   186         </div>
+   187
+   188         <!-- Módulo 5 -->
+   189         <div class="module">
+   190             <div class="module-header">
+   191                 <img src=
+       "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=75
+       0&dpr=1" alt="Cierre y Próximos Pasos">
+   192                 <h2>Módulo V: Cierre - Tu Viaje como Emprendedor IA</h2>
+   193                 <span class="icon">+</span>
+   194             </div>
+   195             <div class="module-content">
+   196                 <h4>Resumen del Framework I.D.E.A.</h4>
+   197                 <p>Hemos completado un viaje a través de un método estructurado para construir negocios
+       en la era de la IA. Recordemos:</p>
+   198                 <ul>
+   199                     <li><strong>Input:</strong> La calidad de lo que entra determina la calidad de lo que
+       sale. La curación de datos es fundamental.</li>
+   200                     <li><strong>Development:</strong> Usamos la IA como un socio de creación, no como un
+       simple ejecutor de tareas.</li>
+   201                     <li><strong>Enhancement:</strong> La iteración es la clave. Usamos la IA para refinar
+       y mejorar constantemente.</li>
+   202                     <li><strong>Automation:</strong> El objetivo es crear sistemas que trabajen para
+       nosotros, liberando nuestro tiempo para la estrategia.</li>
+   203                 </ul>
+   204
+   205                 <h4>Tu Proyecto Final: Aplica lo Aprendido</h4>
+   206                 <p>El conocimiento se consolida con la práctica. Te proponemos un desafío:</p>
+   207                 <ol>
+   208                     <li>Elige una idea de negocio propia (o una que te apasione).</li>
+   209                     <li>Pasa esa idea por los 4 pasos del método I.D.E.A., generando los prompts
+       correspondientes en cada fase.</li>
+   210                     <li>Documenta el proceso: ¿Qué funcionó? ¿Qué fue difícil? ¿Cómo mejoró la IA tu idea
+       inicial?</li>
+   211                 </ol>
+   212                 <p>Este ejercicio es la mejor manera de internalizar el framework y empezar a pensar como
+       un verdadero Emprendedor IA.</p>
+   213
+   214                 <h4>Áreas para Seguir Aprendiendo</h4>
+   215                 <p>Este curso es solo el comienzo. Te recomendamos explorar estas áreas para llevar tus
+       habilidades al siguiente nivel:</p>
+   216                 <ul>
+   217                     <li><strong>Integración con APIs:</strong> Aprender a conectar modelos de IA con
+       otras aplicaciones a través de sus APIs (como la API de OpenAI o Gemini) para una automatización real.</
+       li>
+   218                     - <strong>Fine-Tuning (Ajuste Fino):</strong> Investigar cómo re-entrenar modelos de
+       IA con tus propios datos para crear un asistente ultra-especializado en tu nicho.</li>
+   219                     - <strong>Ética en la IA:</strong> Profundizar en los dilemas éticos relacionados con
+       el uso de la IA, los sesgos en los datos y la privacidad.</li>
+   220                     - <strong>Herramientas No-Code:</strong> Explorar plataformas como Zapier, Make o
+       Voiceflow que te permiten crear automatizaciones complejas sin necesidad de escribir código.</li>
+   221                 </ul>
+   222                 <p>¡El futuro lo construyen los que aprenden más rápido. ¡Mucha suerte!</p>
+   223             </div>
+   224         </div>
+   225
+   226     </main>
+   227
+   228     <footer class="site-footer">
+   229         <img src=
+       "https://raw.githubusercontent.com/Leoscd/presentacion/main/SOY%20LEO%20-%20logo_SIN%20FONDO%20(2).png"
+       alt="Leo IML Logo" class="footer-logo">
+   230         <p>Creado por Leo IML</p>
+   231         <div class="social-links">
+   232             <a href="https://www.instagram.com/soy.leo_ai/" target="_blank" title="Instagram">
+   233                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px"
+       height="24px"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2
+       16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2A5.6 5.6 0 0 0 4 7.6v8.8A5.6 5.6 0 0 0 7.6 20h8.8a5.6 5.6 0 0 0
+       3.6-3.6V7.6A5.6 5.6 0 0 0 16.4 4H7.6zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1
+       0-6zm6.5-3a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+   234             </a>
+   235             <a href="https://www.linkedin.com/in/leo-iml" target="_blank" title="LinkedIn">
+   236                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px"
+       height="24px"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239
+       5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764
+       1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4
+       0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+   237             </a>
+   238             <a href="mailto:leodiazdt@gmail.com" title="Email">
+   239                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px"
+       height="24px"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2
+       0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+   240             </a>
+   241         </div>
+   242     </footer>
+   243
+   244     <script src="script.js"></script>
+   245 </body>
+   246 </html>
